@@ -12,11 +12,11 @@ export default function AuthLayout({
     children: React.ReactNode
   }) {
     return (
-        <div>
+        <div className="text-[#1EB8EA] ">
             {/* <Link href='/'>Home</Link>
             <Link href='/auth/login'>Login</Link>
             <Link href='/auth/register'>Register</Link> */}
-            <h1 className={styles.h1}>Auth Layout</h1>
+            <h1 className="text-5xl font-bold my-8 text-center">Auth Layout</h1>
             {children}
         </div>
             

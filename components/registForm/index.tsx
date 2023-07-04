@@ -18,15 +18,16 @@ export default function LoginForm() {
   };
 
   return (
-    <div>
-      <p className="text-2l font-bold pb-3">Regist your account</p>
+    <div className="block items-center justify-center">
+      <p className="text-2l font-bold pb-3 text-[#4F5864] text-center">Regist with your email</p>
     <form onSubmit={handleSubmit}>
     <input
           type="text"
           value={firstname}
           onChange={(event) => setFirstname(event.target.value)}
           placeholder='First Name'
-          className="text-black block mb-4 py-2 pr-60"
+          // className="text-black block mb-4 py-2 pr-60"
+          className="text-black block bg-gray-100 text-left w-full px-4 py-2 my-8 rounded-md"
         />
 
         <input
@@ -34,7 +35,8 @@ export default function LoginForm() {
           value={lastname}
           onChange={(event) => setLastname(event.target.value)}
           placeholder='last Name'
-          className="text-black block mb-4 py-2 pr-60"
+          // className="text-black block mb-4 py-2 pr-60"
+          className="text-black block bg-gray-100 text-left w-full px-4 py-2 my-8 rounded-md"
         />
         
         <input
@@ -42,13 +44,15 @@ export default function LoginForm() {
           value={email}
           onChange={(event) => setEmail(event.target.value)}
           placeholder='Email Address'
-          className="text-black block mb-4 py-2 pr-60"
+          // className="text-black block mb-4 py-2 pr-60"
+          className="text-black block bg-gray-100 text-left w-full px-4 py-2 my-8 rounded-md"
         />
         <input
           type="text"
           value={password}
           onChange={(event) => setPassword(event.target.value)}
-          className="text-black block mb-4 py-2 pr-60"
+          // className="text-black block mb-4 py-2 pr-60"
+          className="text-black block bg-gray-100 text-left w-full px-4 py-2 my-8 rounded-md"
           placeholder='Password'
         />
 
@@ -56,11 +60,12 @@ export default function LoginForm() {
           type="text"
           value={passwordConfirmation}
           onChange={(event) => setPasswordConfirmation(event.target.value)}
-          className="text-black block mb-4 py-2 pr-60"
+          // className="text-black block mb-4 py-2 pr-60"
+          className="text-black block bg-gray-100 text-left w-full px-4 py-2 my-8 rounded-md"
           placeholder='Confirm Password'
         />
 
-      <button type="submit" className="bg-indigo-500 rounded-full border-4 px-20 py-1">Regist</button>
+      <button type="submit" className="bg-[#1EB3EC] rounded-full border-4 w-full px-32 py-1 text-white text-center">Regist</button>
     </form>
     </div>
   )
